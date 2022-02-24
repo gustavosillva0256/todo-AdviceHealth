@@ -12,9 +12,8 @@ class AdminController extends Controller
     }
 
     public function editar(Request $request, usuario $usuario){
-        
+
         $usuario->nome = $request->nome;
-        $usuario->cpf = $request->cpf;
         $usuario->usuario = $request->usuario;
         $usuario->senha = $request->senha;
         $usuario->save();
